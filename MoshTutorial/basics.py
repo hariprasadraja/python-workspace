@@ -1,5 +1,10 @@
 import math
 
+"""
+Tutorial: https://www.youtube.com/watch?v=_uQrJ0TkZlc&t=7729s
+"""
+
+
 course = 'Python learning tutorial'
 print(course[0:-3])
 print("Another variable: ")
@@ -7,8 +12,8 @@ another = course[:]
 print(another)
 
 # works only on python > 3.6
-# formated_string = f'this is an another {another} course'
-# print(formated_string)
+formated_string = f'this is an another {another} course'
+print(formated_string)
 
 print(len(another))
 print(another.upper())
@@ -21,9 +26,7 @@ print(another.replace('P', 'J'))
 
 
 # Math
-
 x = 2.9
-
 print(round(2.9))
 print(abs(-2.9))  # always retrun positive value
 print(math.ceil(2.9))
@@ -54,7 +57,6 @@ print("the downpayment is $" + str(downpayemnt))
 # Logical Operators
 has_high_income = False
 has_good_credit = True
-
 if has_good_credit and not has_high_income:
     print("eligilble for loan")
 else:
@@ -62,7 +64,6 @@ else:
 
 
 # while loop
-
 secret_number = 9
 guest_count = 0
 guess_limit = 3
@@ -73,4 +74,12 @@ while guest_count < guess_limit:
         print("You won!")
         break
 else:
-    print("")
+    print("You Lost!")
+
+
+# Data Types
+x = 10.0001
+y = 2
+quo, reminder = divmod(x, y)
+print("Quotient", quo)
+print("Reminder", reminder)
