@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/usr/local/bin/python3.7",
+    "python.formatting.provider": "autopep8",
+    "code-runner.runInTerminal": true,
+    "python.autoComplete.extraPaths": [
+        "/home/hariprasad/python/anaconda3",
+        "/home/hariprasad/.local/lib/python3.7/site-packages"
+    ]
+}

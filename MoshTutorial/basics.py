@@ -12,8 +12,8 @@ another = course[:]
 print(another)
 
 # works only on python > 3.6
-formated_string = f'this is an another {another} course'
-print(formated_string)
+# formated_string = (f'this is an another  course')
+# print(formated_string)
 
 print(len(another))
 print(another.upper())
@@ -83,3 +83,54 @@ y = 2
 quo, reminder = divmod(x, y)
 print("Quotient", quo)
 print("Reminder", reminder)
+
+
+# Execptin handline
+try:
+    age = int(input('Age:'))
+    income = 20000
+    risk = income/age
+    print(age)
+except ValueError:
+    print("Invalid value")
+except ZeroDivisionError:
+    print("Age cannot be 0")
+
+
+# Class
+class Point:
+    # constructor
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+# Initialize with constructor
+point1 = Point(10, 20)
+print(point1.x)
+print(point1.y)
+point1.x = 10
+point1.y = 20
+print(point1.x)
+print(point1.y)
+
+
+# Inherritance
+class Mammal:
+    def walk(self):
+        print("walk")
+
+
+class Dog(Mammal):
+    pass
+
+
+class Cat(Mammal):
+    def walk(self):
+        print("walk")
