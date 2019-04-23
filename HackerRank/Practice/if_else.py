@@ -14,12 +14,5 @@ Output Format:
 Print Weird if the number is weird
 otherwise, print Not Weird.
 """
-N = int(input())
-if (N % 2) == 1:
-    print("Weird")
-    sys.exit(0)
 
-if (N > 20) or (2 < N < 5):
-    print("Not Weird")
-else:
-    print("Weird")
+print('Weird' if N % 2 == 1 or (N in range(6, 21)) else 'Not Weird')
